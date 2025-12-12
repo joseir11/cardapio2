@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Capa</title>
 
-<!-- FONTES ESTILO CHALKBOARD -->
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
+<!-- Fontes estilizadas -->
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
     body, html {
@@ -23,42 +23,49 @@
         height: 100vh;
         background-image: url("fundo.jpg");
         background-size: cover;
-        background-position: center;
         background-repeat: no-repeat;
+        background-position: center;
         color: white;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow-y: auto;
-        padding: 20px 10px;
+        padding: 25px;
         box-sizing: border-box;
-        text-align: center;
+        overflow-y: auto;
     }
 
     h1 {
-        font-family: 'Amatic SC', cursive;
-        font-size: 60px;
-        margin: 10px 0 20px 0;
-        letter-spacing: 4px;
+        text-align: center;
+        font-family: 'Lobster', cursive;
+        font-size: 50px;
+        color: #ffcc66;
+        margin-top: 0;
+        margin-bottom: 20px;
     }
 
     h2 {
-        font-family: 'Caveat', cursive;
-        font-size: 36px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        border-bottom: 2px solid white;
-        padding-bottom: 5px;
-        display: inline-block;
+        font-family: 'Lobster', cursive;
+        font-size: 32px;
+        margin-top: 25px;
+        color: #ffdd88;
     }
 
     .item {
-        font-family: 'Patrick Hand', cursive;
+        margin-bottom: 12px;
+        font-family: 'Oswald', sans-serif;
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .nome {
         font-size: 22px;
-        line-height: 1.45em;
-        white-space: pre-line;
-        margin-bottom: 20px;
+        font-family: 'Lobster', cursive;
+        color: #fff;
+        display: block;
+        margin-bottom: 2px;
+    }
+
+    .preco {
+        float: right;
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
     }
 </style>
 
@@ -67,60 +74,75 @@
 
 <div class="capa">
 
-<h1>MENU</h1>
+    <h1>MENU</h1>
 
-<h2>SANDUÍCHES</h2>
-<div class="item">
-ADÃO E EVA................$4,99
-Hamburguer de costela bovina, muçarela, bacon crocante,
-geleia de maçã com pimenta, tomate, cebola rúcula.
+    <h2>SANDUÍCHES</h2>
 
-SERTANEJO GOURMET.........$4,49
-Hamburguer de carne serenada na manteiga, queijo coalho,
-bacon, aligot de mandioca, tomate, cebola, alface
-</div>
+    <div class="item">
+        <span class="nome">ADÃO E EVA <span class="preco">$4,99</span></span>
+        Hamburguer de costela bovina, muçarela, bacon crocante,<br>
+        geleia de maçã com pimenta, tomate, cebola rúcula.
+    </div>
 
-<h2>ACOMPANHAMENTOS</h2>
-<div class="item">
-BATATA FIRTA..............$1,49
-Temperada com lemon pepper
-
-PALITO DE MANDIOCA........$1,49
-Temperada com chimi churri, orégano, cebola em pó
-</div>
-
-<h2>BEBIDAS</h2>
-<div class="item">
-COCA COLA ZERO - LATA 350ML.....$1,59
-GUARANÁ ZERO   - LATA 350ML.....$1,49
-CERVEJA        - LATA 350ML.....$1,69
-</div>
+    <div class="item">
+        <span class="nome">SERTANEJO GOURMET <span class="preco">$4,49</span></span>
+        Hamburguer de carne serenada na manteiga, queijo coalho,<br>
+        bacon, aligot de mandioca, tomate, cebola, alface
+    </div>
 
 
-<!-- ÍCONE CENTRALIZADO EMBAIXO -->
-<a href="https://joseir11.github.io/3comanda/MENU.html"
-   style="
-       position: absolute;
-       left: 50%;
-       transform: translateX(-50%);
-       bottom: 15px;
-       width: 40px;
-       height: 40px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       cursor: pointer;
-   ">
-    
-    <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
-         xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;">
-        <rect x="4" y="3" width="16" height="18" rx="2" stroke="white" stroke-width="2"/>
-        <line x1="7" y1="7" x2="17" y2="7" stroke="white" stroke-width="2"/>
-        <line x1="7" y1="11" x2="17" y2="11" stroke="white" stroke-width="2"/>
-        <line x1="7" y1="15" x2="17" y2="15" stroke="white" stroke-width="2"/>
-    </svg>
+    <h2>ACOMPANHAMENTOS</h2>
 
-</a>
+    <div class="item">
+        <span class="nome">BATATA FRITA <span class="preco">$1,49</span></span>
+        Temperada com lemon pepper
+    </div>
+
+    <div class="item">
+        <span class="nome">PALITO DE MANDIOCA <span class="preco">$1,49</span></span>
+        Temperada com chimi churri, orégano, cebola em pó
+    </div>
+
+
+    <h2>BEBIDAS</h2>
+
+    <div class="item">
+        <span class="nome">COCA COLA ZERO - LATA 350ML <span class="preco">$1,59</span></span>
+    </div>
+
+    <div class="item">
+        <span class="nome">GUARANÁ ZERO - LATA 350ML <span class="preco">$1,49</span></span>
+    </div>
+
+    <div class="item">
+        <span class="nome">CERVEJA - LATA 350ML <span class="preco">$1,69</span></span>
+    </div>
+
+
+    <!-- ÍCONE ORIGINAL, CENTRALIZADO E COM O MESMO LINK -->
+    <a href="https://joseir11.github.io/3comanda/MENU.html"
+       style="
+           position: absolute;
+           left: 50%;
+           transform: translateX(-50%);
+           bottom: 15px;
+           width: 40px;
+           height: 40px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           cursor: pointer;
+       ">
+        
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
+             xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;">
+            <rect x="4" y="3" width="16" height="18" rx="2" stroke="white" stroke-width="2"/>
+            <line x1="7" y1="7" x2="17" y2="7" stroke="white" stroke-width="2"/>
+            <line x1="7" y1="11" x2="17" y2="11" stroke="white" stroke-width="2"/>
+            <line x1="7" y1="15" x2="17" y2="15" stroke="white" stroke-width="2"/>
+        </svg>
+
+    </a>
 
 </div>
 
